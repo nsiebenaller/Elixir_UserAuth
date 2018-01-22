@@ -1,0 +1,24 @@
+<div class="jumbotron">
+  <h2><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h2>
+  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <span id="user">Welcome <%= @conn.params["name"] %></span>
+  </div>
+  <div class="col-md-8">
+    <h3>Messages:</h3>
+    <ul id="message-list" class="list-unstyled">
+
+    </ul>
+
+    <input type="text" id="new-message" class="form-control">
+  </div>
+  <div class="col-md-4">
+    <h3>Users Online:</h3>
+    <ul id="user-list" class="list-unstyled">
+
+    </ul>
+  </div>
+</div>
